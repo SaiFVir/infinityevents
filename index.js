@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const data = require('./words.json');
 const bot = new Discord.Client();
-const token = 'NTk5MjU3NTg3NDA5NDg1ODQ0.XTi9PA.CmrhTtmmdKv89e8fs0LglgzG1XM';
 const perfix = 'in';
 
 bot.on('ready', ()=>{
@@ -212,4 +211,4 @@ bot.on('message', async (message)=>{
    }
 }) // for bot.24
 }catch(err){throw(err)}
-bot.login(token)
+bot.login(process.env.BOT_TOKEN)
