@@ -62,9 +62,11 @@ bot.on('message', async (message)=>{
     switch(a[0]){ // switch means ( cases قارين بين الـ )
         
         case '-c':
+            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             if(!a[1]) return message.reply('Error please define sec arg');m.bulkDelete(a[1]);break;
 
         case '-أسرع':
+            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l1[f1]);m.sendEmbed(e);}}
         }break;
         case '-فكك':
