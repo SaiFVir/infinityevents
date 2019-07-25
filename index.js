@@ -24,7 +24,7 @@ try{
 // });
 
 bot.on('message', async (message)=>{
-    //if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("`You Don't have pers!`");
+    if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
     if(!message.guild.roles.find('name', "test")) return message.reply("`You Don't have pers!`");
     var a = message.content.substring(perfix.length).split(" ");
     var e = new Discord.RichEmbed();
