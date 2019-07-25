@@ -61,174 +61,174 @@ bot.on('message', async (message)=>{
     switch(a[0]){ // switch means ( cases قارين بين الـ )
         
         case '-c':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             if(!a[1]) return message.reply('Error please define sec arg');m.bulkDelete(a[1]);break;
 
         case '-أسرع':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l1[f1]);m.sendEmbed(e);}}
         }break;
         case '-فكك':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l2[f2]).setColor();m.sendEmbed(e);}}
         }break;
         case '-مع-أو-ضد':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l3[f3]).setColor();m.sendEmbed(e);}}
         }break;
         case '-كت-تويت':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l4[f4]).setColor();m.sendEmbed(e);}}
         }break;
         case '-تكرار':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l5[f5]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أغنية-سؤال':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l6[f6]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أبيض-وأسود':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l7[f7]).setColor();m.sendEmbed(e);}}
         }break;
         case '-تتفق':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l8[f8]).setColor();m.sendEmbed(e);}}
         }break;
         case '-لنفترض':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l9[f9]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أوجد-الكـ':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l10[f10]).setColor();m.sendEmbed(e);}}
         }break;
         case '-بحرف-ال':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l11[f11]).setColor();m.sendEmbed(e);}}
         }break;
         case '-رتب-الكـ':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l12[f12]).setColor();m.sendEmbed(e);}}
         }break;
         // case '-وصف-الكـ':
         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l13[f13]).setColor();m.sendEmbed(e);}}
         // }break;
         case '-أسم-المنتج':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l14[f14]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أسم-الدولة':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l15[f15]).setColor();m.sendEmbed(e);}}
         }break;
         case '-جمع-ومفرد':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l16[f16]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أكمل-المثل':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l17[f17]).setColor();m.sendEmbed(e);}}
         }break;
         case '-Pubg':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l18[f18]).setColor();m.sendEmbed(e);}}
         }break;
         case '-المشهد-لك':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l19[f19]).setColor();m.sendEmbed(e);}}
         }break;
         case '-النقطة-فق':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l20[f20]).setColor();m.sendEmbed(e);}}
         }break;
         case '-منشن-تكست':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l21[f21]).setColor();m.sendEmbed(e);}}
         }break;
         case '-اللهجات':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l22[f22]).setColor();m.sendEmbed(e);}}
         }break;
         // case '-فبركة':
         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l23[f23]).setColor();m.sendEmbed(e);}}
         // }break;
         case '-English':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l24[f24]).setColor();m.sendEmbed(e);}}
         }break;
         // case '-كلمة-وأغـ':
         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l25[f25]).setColor();m.sendEmbed(e);}}
         // }break;
         case '-براند-وتـ':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l26[f26]).setColor();m.sendEmbed(e);}}
         }break;
         // case '-صور-أعضاء':
         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l27[f27]).setColor();m.sendEmbed(e);}}
         // }break;
         case '-كاريكتير':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l28[f28]).setColor();m.sendEmbed(e);}}
         }break;
         case '-غير-متطابق':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l29[f29]).setColor();m.sendEmbed(e);}}
         }break;
         case '-كم-الساعة':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l30[f30]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أسم-الفلتر':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l31[f31]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أدمج-وأجب':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l32[f32]).setColor();m.sendEmbed(e);}}
         }break;
         case '-تضاد':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l33[f33]).setColor();m.sendEmbed(e);}}
         }break;
         // case '-أسم-ف-غ':
         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l34[f34]).setColor();m.sendEmbed(e);}}
         // }break;
         case '-تساؤلات':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l35[f35]).setColor();m.sendEmbed(e);}}
         }break;
         case '-كم-بالمية':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l36[f36]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أنطباعك-عن':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l37[f37]).setColor();m.sendEmbed(e);}}
         }break;
         case '-معنى-أسم':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l38[f38]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أسم-الوجبة':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l39[f39]).setColor();m.sendEmbed(e);}}
         }break;
         case '-من-القائل':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l40[f40]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أكمل-بمنشن':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l41[f41]).setColor();m.sendEmbed(e);}}
         }break;
         case '-أسم-العا':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l42[f42]).setColor();m.sendEmbed(e);}}
         }break;
         case '-info-lap':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e
                 //.setThumbnail("http://i8.ae/kpQs")
                 .setDescription("**All departments are working with one perfix `in-`**\n\n`in-info-lap` : الصفحة الحالية لللابتوب\n`in-info-mob` : الصفحة الحالية للموبايل")
@@ -244,7 +244,7 @@ bot.on('message', async (message)=>{
         }}break;
         //http://i8.ae/jPlo
         case '-info-mob':
-            if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage('http://i8.ae/jPlo').setColor('RANDOM');m.sendEmbed(e);}}
         }break;
    }
