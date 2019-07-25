@@ -25,7 +25,7 @@ try{
 
 bot.on('message', async (message)=>{
     //if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("`You Don't have pers!`");
-    if(!message.guild.roles.find('name', test)) return message.reply("`You Don't have pers!`");
+    if(!message.guild.roles.find('name', "test")) return message.reply("`You Don't have pers!`");
     var a = message.content.substring(perfix.length).split(" ");
     var e = new Discord.RichEmbed();
     var m = message.channel;
