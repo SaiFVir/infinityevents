@@ -66,7 +66,7 @@ bot.on('message', async (message)=>{
 
         case '-أسرع':
             if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l1[f1]);m.sendEmbed(e);}else{m.send("`help بجب كتابة الأمر كما مُبان في قائمة `")}
+            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l1[f1]);m.sendEmbed(e);}}
         }break;
         case '-فكك':
             if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
