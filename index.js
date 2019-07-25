@@ -204,9 +204,9 @@ bot.on('message', async (message)=>{
                 .setFooter("Developed by SAIF"/*,u+"CmsL"*/);
                 m.sendEmbed(e);}
         }}break;
-        //http://i8.ae/tQfk
+        //http://i8.ae/jPlo
         case '-info-mob':
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage('http://i8.ae/tQfk').setColor('RANDOM');m.sendEmbed(e);}}
+            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage('http://i8.ae/jPlo').setColor('RANDOM');m.sendEmbed(e);}}
         }break;
    }
 }) // for bot.24
