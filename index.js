@@ -201,7 +201,7 @@ bot.on('message', async (message)=>{
                 .addField("`القسم-الخامس`","```md\n# -غير-متطابق "+l29.length+"\n# -كم-الساعة "+l30.length+"\n# -أسم-الفلتر "+l31.length+"\n# -أدمج-وأجب "+l32.length+"\n# -تضاد "+l33.length+"\n#\n# -تساؤلات "+l35.length+"```", true)
                 .addField("`القسم-السادس`","```md\n# -كم-بالمية "+l36.length+"\n# -أنطباعك-عن "+l37.length+"\n# -معنى-أسم "+l38.length+"\n# -أسم-الوجبة "+l39.length+"\n# -من-القائل "+l40.length+"\n# -أكمل-بمنشن "+l41.length+"\n# -أسم-العا "+l42.length+"```", true)
                 .setColor('RANDOM')
-                .setFooter("Developed by SAIF",u+"CmsL");
+                .setFooter("Developed by SAIF"/*,u+"CmsL"*/);
                 m.sendEmbed(e);}
         }}break;
         //http://i8.ae/tQfk
