@@ -65,7 +65,7 @@ bot.on('message', async (message)=>{
             if(!a[1]) return message.reply('Error please define sec arg');m.bulkDelete(a[1]);break;
 
         case '-أسرع':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
+            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l1[f1]);m.sendEmbed(e);}}
         }break;
         case '-فكك':
