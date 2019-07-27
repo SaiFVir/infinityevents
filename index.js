@@ -24,14 +24,14 @@ try{
 // });
 
 bot.on('message', async (message)=>{
-    //if(!message.member.roles.find(r => r.name === "test")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`");
     var a = message.content.substring(perfix.length).split(" ");
     var e = new Discord.RichEmbed();
     var m = message.channel;
     var mc = message.content;
+    var ms = message;
     var u = 'http://i8.ae/';
-    var f = Math.floor;
-    var o = Math.random();
+//     var f = Math.floor;
+//     var o = Math.random();
     var i;
     var l1=data["l1"],l2=data["l2"],l3=data["l3"],l4=data["l4"],l5=data["l5"],l6=data["l6"],l7=data["l7"],l8=data["l8"],
         l9=data["l9"],l10=data["l10"],l11=data["l11"],l12=data["l12"],l13=data["l13"],l14=data["l14"],l15=data["l15"],
@@ -40,12 +40,12 @@ bot.on('message', async (message)=>{
         l30=data["l30"],l31=data["l31"],l32=data["l32"],l33=data["l33"],l34=data["l34"],l35=data["l35"],l36=data["l36"],
         l37=data["l37"],l38=data["l38"],l39=data["l39"],l40=data["l40"],l41=data["l41"],l42=data["l42"];
 
-    var f1=f(o*l1.length),f2=f(o*l2.length),f3=f(o*l3.length),f4=f(o*l4.length),f5=f(o*l5.length),f6=f(o*l6.length),f7=f(o*l7.length),
-        f8=f(o*l8.length),f9=f(o*l9.length),f10=f(o*l10.length),f11=f(o*l11.length),f12=f(o*l12.length),f13=f(o*l13.length),f14=f(o*l14.length),
-        f15=f(o*l15.length),f16=f(o*l16.length),f17=f(o*l17.length),f18=f(o*l18.length),f19=f(o*l19.length),f20=f(o*l20.length),f21=f(o*l21.length),
-        f22=f(o*l22.length),f23=f(o*l23.length),f24=f(o*l24.length),f25=f(o*l25.length),f26=f(o*l26.length),f27=f(o*l27.length),f28=f(o*l28.length),
-        f29=f(o*l29.length),f30=f(o*l30.length),f31=f(o*l31.length),f32=f(o*l32.length),f33=f(o*l33.length),f34=f(o*l34.length),f35=f(o*l35.length),
-        f36=f(o*l36.length),f37=f(o*l37.length),f38=f(o*l38.length),f39=f(o*l39.length),f40=f(o*l40.length),f41=f(o*l41.length),f42=f(o*l42.length);
+//     var f1=f(o*l1.length),f2=f(o*l2.length),f3=f(o*l3.length),f4=f(o*l4.length),f5=f(o*l5.length),f6=f(o*l6.length),f7=f(o*l7.length),
+//         f8=f(o*l8.length),f9=f(o*l9.length),f10=f(o*l10.length),f11=f(o*l11.length),f12=f(o*l12.length),f13=f(o*l13.length),f14=f(o*l14.length),
+//         f15=f(o*l15.length),f16=f(o*l16.length),f17=f(o*l17.length),f18=f(o*l18.length),f19=f(o*l19.length),f20=f(o*l20.length),f21=f(o*l21.length),
+//         f22=f(o*l22.length),f23=f(o*l23.length),f24=f(o*l24.length),f25=f(o*l25.length),f26=f(o*l26.length),f27=f(o*l27.length),f28=f(o*l28.length),
+//         f29=f(o*l29.length),f30=f(o*l30.length),f31=f(o*l31.length),f32=f(o*l32.length),f33=f(o*l33.length),f34=f(o*l34.length),f35=f(o*l35.length),
+//         f36=f(o*l36.length),f37=f(o*l37.length),f38=f(o*l38.length),f39=f(o*l39.length),f40=f(o*l40.length),f41=f(o*l41.length),f42=f(o*l42.length);
     
     var b = ['-أسرع','-فكك','-مع-أو-ضد','-كت-تويت','-تكرار','-أغنية-سؤال','-أبيض-وأسود',
              '-تتفق','-لنفترض','-أوجد-الكـ','-بحرف-ال','-رتب-الكـ','-وصف-الكـ','-أسم-المنتج',
@@ -53,11 +53,7 @@ bot.on('message', async (message)=>{
              '-كلمة-وأغـ','-براند-وتـ','-صور-أعضاء','-كاريكتير','-English','-اللهجات','-فبركة',
              '-غير-متطابق','-كم-الساعة','-أسم-الفلتر','-أدمج-وأجب','-تضاد','-أسم-ف-غ',
              '-تساؤلات','-كم-بالمية','-أنطباعك-عن','-معنى-أسم','-أسم-الوجبة','-من-القائل','-أكمل-بِمنشن','-أسم-العا','-info-lap','-info-mob'];
-    // switch(a[0]){
-    //     case '-Pubg':
-    //         for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){if(a[1]=mc){e.setImage(u+l18[mc]).setColor();m.sendEmbed(e);}}}
-    //     }break;
-    // }
+
     switch(a[0]){ // switch means ( cases قارين بين الـ )
         
         case '-c':
@@ -65,188 +61,299 @@ bot.on('message', async (message)=>{
             if(!a[1]) return message.reply('Error please define sec arg');m.bulkDelete(a[1]);break;
 
         case '-أسرع':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l1[f1]);m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l1.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l1[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-فكك':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l2[f2]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l2.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l2[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-مع-أو-ضد':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l3[f3]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l3.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l3[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-كت-تويت':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l4[f4]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l4.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l4[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-تكرار':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l5[f5]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l5.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l5[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أغنية-سؤال':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l6[f6]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l6.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l6[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أبيض-وأسود':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l7[f7]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l7.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l7[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-تتفق':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l8[f8]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l8.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l8[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-لنفترض':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l9[f9]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l9.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l9[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أوجد-الكـ':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l10[f10]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l10.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l10[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-بحرف-ال':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l11[f11]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l11.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l11[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-رتب-الكـ':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l12[f12]).setColor();m.sendEmbed(e);}}
-        }break;
-        // case '-وصف-الكـ':
-        //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l13[f13]).setColor();m.sendEmbed(e);}}
-        // }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l12.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l12[a[1]]);m.sendEmbed(e);}}}
+        break;
+        case '-وصف-الكـ':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l13.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l13[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أسم-المنتج':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l14[f14]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l14.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l14[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أسم-الدولة':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l15[f15]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l15.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l15[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-جمع-ومفرد':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l16[f16]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l16.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l16[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أكمل-المثل':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l17[f17]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l17.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l17[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-Pubg':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l18[f18]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l18.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l18[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-المشهد-لك':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l19[f19]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l19.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l19[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-النقطة-فق':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l20[f20]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l20.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l20[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-منشن-تكست':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l21[f21]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l21.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l21[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-اللهجات':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l22[f22]).setColor();m.sendEmbed(e);}}
-        }break;
-        // case '-فبركة':
-        //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l23[f23]).setColor();m.sendEmbed(e);}}
-        // }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l22.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l22[a[1]]);m.sendEmbed(e);}}}
+        break;
+//         // case '-فبركة':
+//         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l23[f23]).setColor();m.sendEmbed(e);}}
+//         // }break;
         case '-English':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l24[f24]).setColor();m.sendEmbed(e);}}
-        }break;
-        // case '-كلمة-وأغـ':
-        //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l25[f25]).setColor();m.sendEmbed(e);}}
-        // }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l24.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l24[a[1]]);m.sendEmbed(e);}}}
+        break;
+        case '-كلمة-وأغـ':
+                if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+                if(a[1] >= l25.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+                for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l25[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-براند-وتـ':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l26[f26]).setColor();m.sendEmbed(e);}}
-        }break;
-        // case '-صور-أعضاء':
-        //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l27[f27]).setColor();m.sendEmbed(e);}}
-        // }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l26.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l26[a[1]]);m.sendEmbed(e);}}}
+        break;
+//         // case '-صور-أعضاء':
+//         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l27[f27]).setColor();m.sendEmbed(e);}}
+//         // }break;
         case '-كاريكتير':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l28[f28]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l28.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l28[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-غير-متطابق':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l29[f29]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] > l29.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l29[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-كم-الساعة':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l30[f30]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l30.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l30[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أسم-الفلتر':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l31[f31]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] > l31.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l31[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أدمج-وأجب':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l32[f32]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l32.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l32[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-تضاد':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l33[f33]).setColor();m.sendEmbed(e);}}
-        }break;
-        // case '-أسم-ف-غ':
-        //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l34[f34]).setColor();m.sendEmbed(e);}}
-        // }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l33.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l33[a[1]]);m.sendEmbed(e);}}}
+        break;
+        case '-أسم-ف-غ':
+                if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+                if(a[1] >= l34.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+                for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l34[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-تساؤلات':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l35[f35]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l35.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l35[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-كم-بالمية':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l36[f36]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l36.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l36[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أنطباعك-عن':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l37[f37]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l37.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l37[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-معنى-أسم':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l38[f38]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l38.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l38[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أسم-الوجبة':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l39[f39]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l39.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l39[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-من-القائل':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l40[f40]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l40.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l40[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أكمل-بمنشن':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l41[f41]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l41.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l41[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-أسم-العا':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l42[f42]).setColor();m.sendEmbed(e);}}
-        }break;
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
+            if(a[1] >= l42.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l42[a[1]]);m.sendEmbed(e);}}}
+        break;
         case '-info-lap':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e
                 //.setThumbnail("http://i8.ae/kpQs")
-                .setDescription("**All departments are working with one perfix `in-`**\n\n`in-info-lap` : الصفحة الحالية لللابتوب\n`in-info-mob` : الصفحة الحالية للموبايل")
-                .addField("`القسم-الأول`","```md\n# -أسرع "+l1.length+"\n# -فكك "+l2.length+"\n# -مع-أو-ضد "+l3.length+"\n# -كت-تويت "+l4.length+"\n# -تكرار "+l5.length+"\n# -أغنية-سؤال "+l6.length+"\n# -أبيض-وأسود "+l7.length+"```", true)
-                .addField("`القسم-الثاني`","```md\n# -تتفق "+l8.length+"\n# -لنفترض "+l9.length+"\n# -أوجد-الكـ "+l10.length+"\n# -بحرف-ال "+l11.length+"\n# -رتب-الكـ "+l12.length+"\n#\n# -أسم-المنتج "+l14.length+"```", true)
-                .addField("`القسم-الثالث`","```md\n# -أسم-الدولة "+l15.length+"\n# -جمع-ومفرد "+l16.length+"\n# -أكمل-المثل "+l17.length+"\n# -"+l18.length+" Pubg\n# -المشهد-لك "+l19.length+"\n# -النقطة-فق "+l20.length+"\n# -منشن-تكست "+l21.length+"```", true)
-                .addField("`القسم-الرابع`","```md\n# -اللهجات "+l22.length+"\n#\n# -"+l24.length+" English\n#\n# -براند-وتـ "+l26.length+"\n#\n# -كاريكتير "+l28.length+"```", true)
-                .addField("`القسم-الخامس`","```md\n# -غير-متطابق "+l29.length+"\n# -كم-الساعة "+l30.length+"\n# -أسم-الفلتر "+l31.length+"\n# -أدمج-وأجب "+l32.length+"\n# -تضاد "+l33.length+"\n#\n# -تساؤلات "+l35.length+"```", true)
-                .addField("`القسم-السادس`","```md\n# -كم-بالمية "+l36.length+"\n# -أنطباعك-عن "+l37.length+"\n# -معنى-أسم "+l38.length+"\n# -أسم-الوجبة "+l39.length+"\n# -من-القائل "+l40.length+"\n# -أكمل-بمنشن "+l41.length+"\n# -أسم-العا "+l42.length+"```", true)
+                .setDescription("**All departments are working with one perfix `in-`**\n\n`in-info-lap` : **الصفحة الحالية لللابتوب**\n`in-info-mob` : **الصفحة الحالية للموبايل**\n`-للحصول على أجوبة الأقسام المُميزة بنقطة فقط قبل القسم أكتب ج`\n`مُلاحظة : يبدأ عرض الصور من رقم 0 والرقم الأخير لِكُل قسم لا يُحسب`")
+                .addField("`القسم-الأول`","```md\n# أسرع "+l1.length+"\n# فكك "+l2.length+"\n# مع-أو-ضد "+l3.length+"\n# كت-تويت "+l4.length+"\n# تكرار "+l5.length+"\n# أغنية-سؤال "+l6.length+"\n# أبيض-وأسود "+l7.length+"```", true)
+                .addField("`القسم-الثاني`","```md\n# تتفق "+l8.length+"\n# لنفترض "+l9.length+"\n# أوجد-الكـ "+l10.length+"\n# بحرف-ال "+l11.length+"\n# رتب-الكـ "+l12.length+"\n# وصف-الكـ "+l13.length+"\u2022\n# أسم-المنتج "+l14.length+"\u2022```", true)
+                .addField("`القسم-الثالث`","```md\n# أسم-الدولة "+l15.length+"\u2022\n# جمع-ومفرد "+l16.length+"\n# أكمل-المثل "+l17.length+"\u2022\n# "+l18.length+" Pubg\u2022\n# المشهد-لك "+l19.length+"\u2022\n# النقطة-فق "+l20.length+"\n# منشن-تكست "+l21.length+"```", true)
+                .addField("`القسم-الرابع`","```md\n# اللهجات "+l22.length+"\n#\n# "+l24.length+" English\n# كلمة-وأغـ "+l25.length+"\u2022\n# براند-وتـ "+l26.length+"\n#\n# كاريكتير "+l28.length+"```", true)
+                .addField("`القسم-الخامس`","```md\n# غير-متطابق "+l29.length+"\n# كم-الساعة "+l30.length+"\n# أسم-الفلتر "+l31.length+"\n# أدمج-وأجب "+l32.length+"\n# تضاد "+l33.length+"\n# أسم-ف-غ "+l34.length+"\u2022\n# تساؤلات "+l35.length+"```", true)
+                .addField("`القسم-السادس`","```md\n# كم-بالمية "+l36.length+"\n# أنطباعك-عن "+l37.length+"\n# معنى-أسم "+l38.length+"\n# أسم-الوجبة "+l39.length+"\n# من-القائل "+l40.length+"\n# أكمل-بمنشن "+l41.length+"\n# أسم-العا "+l42.length+"```", true)
                 .setColor('RANDOM')
-                .setFooter("Developed by SAIF"/*,u+"CmsL"*/);
+                .setFooter("Developed by SAIF");
                 m.sendEmbed(e);}
         }}break;
-        //http://i8.ae/jPlo
+        //http://i8.ae/yBIB
         case '-info-mob':
-            if(!message.member.roles.find(r => r.name === "events")) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage('http://i8.ae/jPlo').setColor('RANDOM');m.sendEmbed(e);}}
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage('http://i8.ae/yBIB').setColor('RANDOM');m.sendEmbed(e);}}
         }break;
+        case 'ج-كلمة-وأغـ':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/Nokk").setColor('RANDOM');m.sendEmbed(e);
+        break;
+        case 'ج-وصف-الكـ':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/1Eh4").setColor('RANDOM');m.sendEmbed(e);
+        break;
+        case 'ج-أسم-المنتج':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/8RnN").setColor('RANDOM');m.sendEmbed(e);
+        break;
+        case 'ج-أسم-ف-غ':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/cS3M").setColor('RANDOM');m.sendEmbed(e);
+        break;
+        case 'ج-أسم-الدولة':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/kP1T").setColor('RANDOM');m.sendEmbed(e);
+        break;
+        case 'ج-أكمل-المثل':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/zXI7").setColor('RANDOM');m.sendEmbed(e);
+        break;
+        case 'ج-المشهد-لك':
+            if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
+                e.setImage("http://i8.ae/L5y1").setColor('RANDOM');m.sendEmbed(e);
+        break;
    }
 }) // for bot.24
 }catch(err){throw(err)}
