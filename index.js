@@ -47,11 +47,11 @@ bot.on('message', async (message)=>{
 //         f29=f(o*l29.length),f30=f(o*l30.length),f31=f(o*l31.length),f32=f(o*l32.length),f33=f(o*l33.length),f34=f(o*l34.length),f35=f(o*l35.length),
 //         f36=f(o*l36.length),f37=f(o*l37.length),f38=f(o*l38.length),f39=f(o*l39.length),f40=f(o*l40.length),f41=f(o*l41.length),f42=f(o*l42.length);
     
-    var b = ['أسرع','فكك','مع-أو-ضد','كت-تويت','المتكرر','أغنية-سؤال','-أبيض-وأسود',
-             'تتفق','لنفترض','أوجد-الكـ','بحرف-ال','رتب-الكـ','وصف-الكـ','-أسم-المنتج',
-             'أسم-الدولة','النقطة-فق','منشن-تكست','Pubg','المشهد-لك','جمع-ومفرد','أكمل-المثل',
-             'كلمة-وأغـ','براند-وتـ','صور-أعضاء','كاريكتير','English','اللهجات','فبركة',
-             'غير-متطابق','كم-الساعة','أسم-الفلتر','أدمج-وأجب','تضاد','أسم-ف-غ',
+    var b = ['أسرع','اسرع','فكك','مع-أو-ضد','مع-او-ضد','كت-تويت','المتكرر','أغنية-سؤال','اغنية-سؤال','ابيض-واسود','أبيض-وأسود',
+             'تتفق','لنفترض','أوجد-الكـ','أوجد-الكلمة','اوجد-الكلمة','اوجد-الكـ','بحرف-ال','رتب-الكـ','رتب-الكلمة','وصف-الكـ','وصف-الكلمة','اسم-المنتج','أسم-المنتج',
+             'أسم-الدولة','اسم-الدولة','النقطة-فق','النقطة-المفقودة','منشن-تكست','pubg','PUBG','Pubg','اكمل-المثل','المشهد-لك','جمع-ومفرد','أكمل-المثل',
+             'كلمة-وأغـ','براند-وتـ','صور-أعضاء','كاريكتير','english','ENGLISH','English','اللهجات','فبركة','براند-وتطبيق','اسم-ف-غ','اكمل-بمنشن','اسم-العا','اسم-العاصمة',
+             'غير-متطابق','كلمة-واغنية','كلمة-وأغنية','انطباعك-عن','كم-الساعة','معنى-اسم','أسم-الفلتر','أدمج-وأجب','تضاد','أسم-ف-غ','اسم-الفلتر','ادمج-واجب',
              'تساؤلات','كم-بالمية','أنطباعك-عن','معنى-أسم','أسم-الوجبة','من-القائل','أكمل-بِمنشن','أسم-العا','info-lap','info-mob'];
 
     switch(a[0]){ // switch means ( cases قارين بين الـ )
@@ -59,7 +59,7 @@ bot.on('message', async (message)=>{
         case 'c':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return message.channel.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(message => message.delete(5000));
             if(!a[1]) return message.reply('Error please define sec arg');m.bulkDelete(a[1]);break;
-
+        case 'اسرع':
         case 'أسرع':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -72,6 +72,7 @@ bot.on('message', async (message)=>{
             if(a[1] >= l2.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l2[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'مع-او-ضد':
         case 'مع-أو-ضد':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -90,12 +91,14 @@ bot.on('message', async (message)=>{
             if(a[1] >= l5.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l5[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اغنية-سؤال':
         case 'أغنية-سؤال':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l6.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l6[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'ابيض-واسود':
         case 'أبيض-وأسود':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -114,6 +117,9 @@ bot.on('message', async (message)=>{
             if(a[1] >= l9.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l9[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اوجد-الكـ':
+        case 'اوجد-الكلمة':
+        case 'أوجد-الكلمة':
         case 'أوجد-الكـ':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -126,24 +132,28 @@ bot.on('message', async (message)=>{
             if(a[1] >= l11.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l11[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'رتب-الكلمة':
         case 'رتب-الكـ':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l12.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l12[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'وصف-الكلمة':
         case 'وصف-الكـ':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l13.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l13[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اسم-المنتج':
         case 'أسم-المنتج':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l14.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l14[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اسم-الدولة':
         case 'أسم-الدولة':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -156,12 +166,15 @@ bot.on('message', async (message)=>{
             if(a[1] >= l16.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l16[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اكمل-المثل':
         case 'أكمل-المثل':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l17.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l17[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'PUBG':
+        case 'pubg':
         case 'Pubg':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -174,6 +187,7 @@ bot.on('message', async (message)=>{
             if(a[1] >= l19.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l19[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'النقطة-المفقودة':
         case 'النقطة-فق':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -195,18 +209,23 @@ bot.on('message', async (message)=>{
 //         // case '-فبركة':
 //         //     for(i in b){if(mc.includes(b[i])){if(a[0]=b[i]){e.setImage(u+l23[f23]).setColor();m.sendEmbed(e);}}
 //         // }break;
+        case 'ENGLISH':
+        case 'english':
         case 'English':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l24.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l24[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'كلمة-واغنية':
+        case 'كلمة-وأغنية':
         case 'كلمة-وأغـ':
                 if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
                 if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
                 if(a[1] >= l25.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
                 for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l25[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'براند-وتطبيق':
         case 'براند-وتـ':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -234,12 +253,14 @@ bot.on('message', async (message)=>{
             if(a[1] >= l30.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l30[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اسم-الفلتر':
         case 'أسم-الفلتر':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] > l31.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l31[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'ادمج-واجب':
         case 'أدمج-وأجب':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -252,6 +273,7 @@ bot.on('message', async (message)=>{
             if(a[1] >= l33.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l33[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اسم-ف-غ':
         case 'أسم-ف-غ':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -270,12 +292,14 @@ bot.on('message', async (message)=>{
             if(a[1] >= l36.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l36[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'انطباعك-عن':
         case 'أنطباعك-عن':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l37.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l37[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'معنى-اسم':
         case 'معنى-أسم':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
@@ -294,12 +318,15 @@ bot.on('message', async (message)=>{
             if(a[1] >= l40.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l40[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اكمل-بمنشن':
         case 'أكمل-بمنشن':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l41.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l41[a[1]]);m.sendEmbed(e);}}}
         break;
+        case 'اسم-العاصمة':
+        case 'اسم-العا':
         case 'أسم-العا':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
