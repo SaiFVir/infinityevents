@@ -47,7 +47,7 @@ bot.on('message', async (message)=>{
 //         f29=f(o*l29.length),f30=f(o*l30.length),f31=f(o*l31.length),f32=f(o*l32.length),f33=f(o*l33.length),f34=f(o*l34.length),f35=f(o*l35.length),
 //         f36=f(o*l36.length),f37=f(o*l37.length),f38=f(o*l38.length),f39=f(o*l39.length),f40=f(o*l40.length),f41=f(o*l41.length),f42=f(o*l42.length);
     
-    var b = ['أسرع','فكك','مع-أو-ضد','كت-تويت','تكرار','أغنية-سؤال','-أبيض-وأسود',
+    var b = ['أسرع','فكك','مع-أو-ضد','كت-تويت','المتكرر','أغنية-سؤال','-أبيض-وأسود',
              'تتفق','لنفترض','أوجد-الكـ','بحرف-ال','رتب-الكـ','وصف-الكـ','-أسم-المنتج',
              'أسم-الدولة','النقطة-فق','منشن-تكست','Pubg','المشهد-لك','جمع-ومفرد','أكمل-المثل',
              'كلمة-وأغـ','براند-وتـ','صور-أعضاء','كاريكتير','English','اللهجات','فبركة',
@@ -84,7 +84,7 @@ bot.on('message', async (message)=>{
             if(a[1] >= l4.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage(u+l4[a[1]]);m.sendEmbed(e);}}}
         break;
-        case 'تكرار':
+        case 'المتكرر':
             if(!ms.member.roles.find(r => r.name === "events")) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             if(!a[1]) return m.send("`الرجاءأدخال رقم`").then(ms => ms.delete(5000));
             if(a[1] >= l5.length) return m.send("`!الرقم أكبر من عدد الصور الموجودة في القسم`").then(ms => ms.delete(5000));
@@ -311,7 +311,7 @@ bot.on('message', async (message)=>{
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e
                 //.setThumbnail("http://i8.ae/kpQs")
                 .setDescription("**All departments are working with one perfix `in-`**\n\n`in-info-lap` : **الصفحة الحالية لللابتوب**\n`in-info-mob` : **الصفحة الحالية للموبايل**\n`-للحصول على أجوبة الأقسام المُميزة بنقطة فقط قبل القسم أكتب ج`\n`مُلاحظة : يبدأ عرض الصور من رقم 0 والرقم الأخير لِكُل قسم لا يُحسب`")
-                .addField("`القسم-الأول`","```md\n# أسرع "+l1.length+"\n# فكك "+l2.length+"\n# مع-أو-ضد "+l3.length+"\n# كت-تويت "+l4.length+"\n# تكرار "+l5.length+"\n# أغنية-سؤال "+l6.length+"\n# أبيض-وأسود "+l7.length+"```", true)
+                .addField("`القسم-الأول`","```md\n# أسرع "+l1.length+"\n# فكك "+l2.length+"\n# مع-أو-ضد "+l3.length+"\n# كت-تويت "+l4.length+"\n# المتكرر "+l5.length+"\n# أغنية-سؤال "+l6.length+"\n# أبيض-وأسود "+l7.length+"```", true)
                 .addField("`القسم-الثاني`","```md\n# تتفق "+l8.length+"\n# لنفترض "+l9.length+"\n# أوجد-الكـ "+l10.length+"\n# بحرف-ال "+l11.length+"\n# رتب-الكـ "+l12.length+"\n# وصف-الكـ "+l13.length+"\u2022\n# أسم-المنتج "+l14.length+"\u2022```", true)
                 .addField("`القسم-الثالث`","```md\n# أسم-الدولة "+l15.length+"\u2022\n# جمع-ومفرد "+l16.length+"\n# أكمل-المثل "+l17.length+"\u2022\n# "+l18.length+" Pubg\u2022\n# المشهد-لك "+l19.length+"\u2022\n# النقطة-فق "+l20.length+"\n# منشن-تكست "+l21.length+"```", true)
                 .addField("`القسم-الرابع`","```md\n# اللهجات "+l22.length+"\n#\n# "+l24.length+" English\n# كلمة-وأغـ "+l25.length+"\u2022\n# براند-وتـ "+l26.length+"\n#\n# كاريكتير "+l28.length+"```", true)
