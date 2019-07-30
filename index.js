@@ -381,6 +381,42 @@ bot.on('message', async (message)=>{
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
                 e.setImage("http://i8.ae/L5y1").setColor('RANDOM');m.sendEmbed(e);
         break;
+        case 'cal':
+            if(!a[1]) return m.send("`يرجى كتابة العنصر الأول لأتمام العملية`");
+            if(!a[2]) return m.send("`يرجى وضع أحدى العمليات الحسابية لأتمام العملية`");
+            if(!a[3]) return m.send("`يرجى كتابة العنصر الثاني لأتمام العملية`");
+            if(isNaN(a[1])) return m.send("`!العنصر الأول لا يساوي رقم`");
+            if(isNaN(a[3])) return m.send("`!العنصر الثاني لا يساوي رقم`");
+            if(a[2]=="+"){
+                var result = parseInt(a[1])+parseInt(a[3]);
+                    e.setDescription(result)
+                    .setColor("RANDOM");
+                    m.sendEmbed(e);
+                }else if(a[2]=="-"){
+                    var result = parseInt(a[1])-parseInt(a[3]);
+                    if(result<0) return m.send("`عملية حسابية خاطئة`");
+                    e.setDescription(result)
+                    .setColor("RANDOM");
+                    m.sendEmbed(e);
+                }else if(a[2]=="*"){
+                    var result = parseInt(a[1])*parseInt(a[3]);
+                    e.setDescription(result)
+                    .setColor("RANDOM");
+                    m.sendEmbed(e);
+                }else if(a[2]=="/"){
+                    var result = parseInt(a[1])/parseInt(a[3]);
+                    if(result<0.99) return m.send("`عملية حسابية خاطئة`");
+                    e.setDescription(result)
+                    .setColor("RANDOM");
+                    m.sendEmbed(e);
+                }else if(a[2]=="%"){
+                    var result = parseInt(a[1])%parseInt(a[3]);
+                    if(result<0) return m.send("`عملية حسابية خاطئة`");
+                    e.setDescription(result)
+                    .setColor("RANDOM");
+                    m.sendEmbed(e);
+                }
+        break;
    }
 }) // for bot.24
 }catch(err){throw(err)}
