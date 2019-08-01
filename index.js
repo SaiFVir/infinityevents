@@ -349,9 +349,11 @@ bot.on('message', async (message)=>{
                 m.sendEmbed(e);}
         }}break;
         //http://i8.ae/yBIB
+        //http://i8.ae/aZWp
         case 'info-mob':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
-            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setImage('http://i8.ae/yBIB').setColor('RANDOM');m.sendEmbed(e);}}
+            for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e.setDescription("**All departments are working with one perfix `in-`**\n\n`in-info-lap` : **الصفحة الحالية لللابتوب**\n`in-info-mob` : **الصفحة الحالية للموبايل**\n`-للحصول على أجوبة الأقسام المُميزة بنقطة فقط قبل القسم أكتب ج`\n`مُلاحظة : يبدأ عرض الصور من رقم 0 والرقم الأخير لِكُل قسم لا يُحسب`")
+                .setImage('http://i8.ae/aZWp').setColor('RANDOM').setFooter("Developed by SAIF");m.sendEmbed(e);}}
         }break;
         case 'ج-كلمة-وأغـ':
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
