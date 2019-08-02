@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const data = require('./words.json');
 const bot = new Discord.Client();
-const perfix = 'in-';
+const perfix = '-';
 
 bot.on('ready', ()=>{
     console.log('Ready !!!');
