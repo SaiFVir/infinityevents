@@ -5,7 +5,7 @@ const perfix = '-';
 
 bot.on('ready', ()=>{
     console.log('Ready !!!');
-    bot.user.setActivity("SAIF",{type:"LISTENING"});
+    bot.user.setActivity("Soon",{type:"Playing"});
 })
 
 try{
