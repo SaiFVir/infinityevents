@@ -337,7 +337,7 @@ bot.on('message', async (message)=>{
             if(!ms.member.roles.find(r => r.name === "events"|| ms.member.hasPermission("ADMINISTRATOR"))) return m.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(ms => ms.delete(5000));
             for(i in b){if(mc.includes(b[i])){if(a[0]==b[i]){e
                 //.setThumbnail("http://i8.ae/kpQs")
-                .setDescription("**All departments are working with one perfix `in-`**\n\n`in-info-lap` : **الصفحة الحالية لللابتوب**\n`in-info-mob` : **الصفحة الحالية للموبايل**\n`-للحصول على أجوبة الأقسام المُميزة بنقطة فقط قبل القسم أكتب ج`\n`مُلاحظة : يبدأ عرض الصور من رقم 0 والرقم الأخير لِكُل قسم لا يُحسب`")
+                .setDescription("**All departments are working with one perfix `-`**\n\n`in-info-lap` : **الصفحة الحالية لللابتوب**\n`in-info-mob` : **الصفحة الحالية للموبايل**\n`-للحصول على أجوبة الأقسام المُميزة بنقطة فقط قبل القسم أكتب ج`\n`مُلاحظة : يبدأ عرض الصور من رقم 0 والرقم الأخير لِكُل قسم لا يُحسب`")
                 .addField("`القسم-الأول`","```md\n# أسرع "+l1.length+"\n# فكك "+l2.length+"\n# مع-أو-ضد "+l3.length+"\n# كت-تويت "+l4.length+"\n# المتكرر "+l5.length+"\n# أغنية-سؤال "+l6.length+"\n# أبيض-وأسود "+l7.length+"```", true)
                 .addField("`القسم-الثاني`","```md\n# تتفق "+l8.length+"\n# لنفترض "+l9.length+"\n# أوجد-الكـ "+l10.length+"\n# بحرف-ال "+l11.length+"\n# رتب-الكـ "+l12.length+"\n# وصف-الكـ "+l13.length+"\u2022\n# أسم-المنتج "+l14.length+"\u2022```", true)
                 .addField("`القسم-الثالث`","```md\n# أسم-الدولة "+l15.length+"\u2022\n# جمع-ومفرد "+l16.length+"\n# أكمل-المثل "+l17.length+"\u2022\n# "+l18.length+" Pubg\u2022\n# المشهد-لك "+l19.length+"\u2022\n# النقطة-فق "+l20.length+"\n# منشن-تكست "+l21.length+"```", true)
