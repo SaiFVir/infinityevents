@@ -10,19 +10,6 @@ bot.on('ready', ()=>{
 })
 
 try{
-// حاول مرة اخرى عسا وان تضبط معك
-// bot.on('message', (message) =>{
-//     var a = message.content.substring(perfix.length).split(" ");
-//     var l18 = data["l18"];
-//     //console.log(l18[message.content]);
-//     var done = l18[message.content];
-//     if(a[0]!=done){
-//         console.log("error");
-//     } else if(a[0]=done){
-//         console.log(done)
-//     }
-
-// });
 
 bot.on('message', async (message)=>{
     var a = message.content.substring(perfix.length).split(" ");
@@ -423,7 +410,7 @@ bot.on('message', async (message)=>{
    }
 }); // for bot.24
     
-bot.on("message", msg => {
+bot.on("message",async msg => {
 	const args = msg.content.split(" ").slice(1);
 	if (msg.content.startsWith(perfix + "eval")) {
 	  if(msg.author.id !== ownerid) return;
