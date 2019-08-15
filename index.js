@@ -420,6 +420,30 @@ bot.on('message', async (message)=>{
                 }
         break;
    }
-}) // for bot.24
+}); // for bot.24
+    
+bot.on("message", msg => {
+	const args = msg.content.split(" ").slice(1);
+	if (msg.content.startsWith(perfix + "eval")) {
+	  if(msg.author.id !== ownerid) return;
+	  try {
+		function clean(text) {
+			if (typeof(text) === "string")
+			  return text.replace(/`/g, "`" + String.fromCharCode(8203)).replace(/@/g, "@" + String.fromCharCode(8203));
+			else
+				return text;
+		  }
+		const code = args.join(" ");
+		let evaled = eval(code);
+   
+		if (typeof evaled !== "string")
+		  evaled = require("util").inspect(evaled);
+   
+		msg.channel.send(clean(evaled), {code:"xl"});
+	  } catch (err) {
+		msg.channel.send(`\`ERROR\` \`\`\`xl\n${clean(err)}\n\`\`\``);
+	  }
+	}
+});
 }catch(err){throw(err)}
 bot.login(process.env.BOT_TOKEN)
