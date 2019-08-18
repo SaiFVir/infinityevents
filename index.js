@@ -436,6 +436,7 @@ bot.on("message",async msg => {
 
 bot.on("message",async msg => {
 	let args = msg.content.substring(perfix.length).split(".");
+	let cmd = args[0];
 	if(cmd === 'info'){
 		if(msg.author.id !== ownerid) return;
 		let e = new Discord.RichEmbed();
