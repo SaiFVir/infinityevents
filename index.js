@@ -443,7 +443,7 @@ bot.on("message",async msg => {
 		let ms = msg.channel;
 
 		e.setAuthor(`${msg.guild.name}`, `${msg.guild.iconURL}`)
-		.addField('\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC', `(Channels/\`${msg.guild.channels.size}\`)\n(Roles/\`${msg.guild.roles.size}\`)\n(Members/\`${msg.guild.memberCount}\`)\n(Online/\`${msg.guild.presences.size}\`\n(Emojis/\`${msg.guild.emojis.size}\`)\n(Owner/${msg.guild.owner})\n(Region/\`${msg.guild.region}\`)\n(CreatedOn/\`${msg.guild.createdAt.getFullYear()+'/'+msg.guild.createdAt.getDay()+'/'+msg.guild.createdAt.getHours()}\`)`)
+		.addField('\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC\u30FC', `(Channels/\`${msg.guild.channels.size}\`)\n(Roles/\`${msg.guild.roles.size}\`)\n(Members/\`${msg.guild.members.filter(m => !m.user.bot).size}\`)\n(Status :${msg.guild.emojis.find(f => f.name === 'online')}\`${msg.guild.members.filter(m => m.presence.status === 'online').size}\`-${msg.guild.emojis.find(f => f.name === 'offline')}\`${msg.guild.members.filter(m => m.presence.status === 'offline').size}\`-${msg.guild.emojis.find(f => f.name === 'Idle')}\`${msg.guild.members.filter(m => m.presence.status === 'idle').size}\`-${msg.guild.emojis.find(f => f.name === 'dnd')}\`${msg.guild.members.filter(m => m.presence.status === 'dnd').size}\`\n(Bots/\`${msg.guild.members.filter(m => m.user.bot).size}\`)\n(Emojis/\`${msg.guild.emojis.size}\`)\n(Owner/${msg.guild.owner})\n(Region/\`${msg.guild.region}\`)\n(CreatedOn/\`${msg.guild.createdAt.getFullYear()+'/'+msg.guild.createdAt.getDay()+'/'+msg.guild.createdAt.getHours()}\`)`)
 		.setThumbnail(`${msg.guild.iconURL}`)
 		.setColor('#2a7bb5')
 		.setDescription('**A collection of information**')
