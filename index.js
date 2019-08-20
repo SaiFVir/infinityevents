@@ -409,7 +409,7 @@ bot.on('message', async (message)=>{
         break;
    }
 }); // for bot.24
-    
+/*
 bot.on("message",async msg => {
 	const args = msg.content.split(" ").slice(1);
 	if (msg.content.startsWith(perfix + "eval")) {
@@ -433,7 +433,7 @@ bot.on("message",async msg => {
 	  }
 	}
 });
-/*
+
 bot.on("message",async msg => {
 	let args = msg.content.split(" ");
 
