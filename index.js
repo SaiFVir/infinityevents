@@ -433,7 +433,7 @@ bot.on("message",async msg => {
 	  }
 	}
 });
-
+/*
 bot.on("message",async msg => {
 	let args = msg.content.split(" ");
 
@@ -450,7 +450,7 @@ bot.on("message",async msg => {
 		.setTimestamp()
 		msg.channel.send(e);
 	}
-});
+});  */
 
 }catch(err){throw(err)}
 bot.login(process.env.BOT_TOKEN)
