@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const data = require('./words.json');
 const bot = new Discord.Client();
 const perfix = '-';
-//const ownerid = "426010517484732416";
+const ownerid = "426010517484732416";
 
 bot.on('ready', ()=>{
     console.log('Ready !!!');
