@@ -26,7 +26,7 @@ bot.on('message', async msg =>{
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(s => s.delete(5000));
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 85 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
-            await mch.sendFile(`./files/${a[1]}.png`);
+            await mch.sendFile(`./files/1/${a[1]}.png`);
             msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
         break;
         case 'فكك':
