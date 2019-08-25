@@ -13,7 +13,7 @@ try{
 
 bot.on('message', async msg =>{
     let a = msg.content.substring(perfix.length).split(" ");
-    let e = new Discord.RichEmbed();
+
     let mch = msg.channel;
  
     switch(a[0]){
@@ -370,10 +370,11 @@ bot.on('message', async msg =>{
         break;
         case 'help':
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
-            await e.setAuthor(`${msg.author.username} | Usege:[ex: -english 10]`, `${msg.author.avatarURL}`)
+            let e = new Discord.RichEmbed();
+	    e.setAuthor(`${msg.author.username} | Usege:[ex: -english 10]`, `${msg.author.avatarURL}`)
             .setImage("https://s2.gulfupload.com/i/00095/x19ty08bzgx8.png")
             .setFooter(`Developed by SAIF`)
-            .setTimestamp();mch.send(e);
+            .setTimestamp();await mch.send(e);
         break;
    }
    
