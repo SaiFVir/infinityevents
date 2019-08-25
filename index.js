@@ -370,7 +370,6 @@ bot.on('message', async msg =>{
         break;
         case 'help':
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
-            let e = new Discord.RichEmbed();
             await e.setAuthor(`${msg.author.username} | Usege:[ex: -english 10]`, `${msg.author.avatarURL}`)
             .setImage("https://s2.gulfupload.com/i/00095/x19ty08bzgx8.png")
             .setFooter(`Developed by ${msg.guild.members.get("426010517484732416").user.username}`, `${msg.guild.members.get("426010517484732416").user.avatarURL}`)
