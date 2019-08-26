@@ -27,7 +27,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 85 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/1/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'فكك':
             msg.delete();
@@ -35,7 +35,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 107 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/2/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'مع-او-ضد':
         case 'مع-أو-ضد':
@@ -44,7 +44,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 122 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/3/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'كت-تويت':
             msg.delete();
@@ -52,7 +52,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 156 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/4/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`)
+            msg.channel.send(`@here`)
         break;
         case 'المتكرر':
             msg.delete();
@@ -60,7 +60,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 58 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/5/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اغنية-سؤال':
         case 'أغنية-سؤال':
@@ -69,7 +69,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 12 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/6/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'ابيض-واسود':
         case 'أبيض-وأسود':
@@ -78,7 +78,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 46 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/7/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'تتفق':
             msg.delete();
@@ -86,7 +86,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 103 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/8/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'لنفترض':
             msg.delete();
@@ -94,7 +94,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 42 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/9/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اوجد-الكـ':
         case 'اوجد-الكلمة':
@@ -105,7 +105,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 31 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/10/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'بحرف-ال':
             msg.delete();
@@ -113,7 +113,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 28 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/11/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'رتب-الكلمة':
         case 'رتب-الكـ':
@@ -122,7 +122,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 18 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/12/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'وصف-الكلمة':
         case 'وصف-الكـ':
@@ -131,7 +131,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 32 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/13/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اسم-المنتج':
         case 'أسم-المنتج':
@@ -140,7 +140,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 16 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/14/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اسم-الدولة':
         case 'أسم-الدولة':
@@ -149,7 +149,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 55 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/15/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'جمع-ومفرد':
             msg.delete();
@@ -157,7 +157,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 27 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/16/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اكمل-المثل':
         case 'أكمل-المثل':
@@ -166,7 +166,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 37 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/17/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'PUBG':
         case 'pubg':
@@ -176,7 +176,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 14 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/18/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'المشهد-لك':
             msg.delete();
@@ -184,7 +184,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 49 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/19/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'النقطة-المفقودة':
         case 'النقطة-فق':
@@ -193,7 +193,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 25 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/20/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'منشن-تكست':
             msg.delete();
@@ -201,7 +201,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 84 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/21/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اللهجات':
             msg.delete();
@@ -209,7 +209,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 39 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/22/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'ENGLISH':
         case 'english':
@@ -219,7 +219,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 25 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/23/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'كلمة-واغنية':
         case 'كلمة-وأغنية':
@@ -229,7 +229,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 33 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/24/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'براند-وتطبيق':
         case 'براند-وتـ':
@@ -246,7 +246,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 34 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/26/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'غير-متطابق':
             msg.delete();
@@ -262,7 +262,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 30 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/28/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اسم-الفلتر':
         case 'أسم-الفلتر':
@@ -271,7 +271,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 14 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/29/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'ادمج-واجب':
         case 'أدمج-وأجب':
@@ -280,7 +280,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 26 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/30/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'تضاد':
             msg.delete();
@@ -288,7 +288,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 72 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/31/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اسم-ف-غ':
         case 'أسم-ف-غ':
@@ -297,7 +297,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 38 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/32/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'تساؤلات':
             msg.delete();
@@ -305,7 +305,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 60 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/33/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'كم-بالمية':
             msg.delete();
@@ -313,7 +313,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 15 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/34/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'انطباعك-عن':
         case 'أنطباعك-عن':
@@ -322,7 +322,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 15 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/35/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'معنى-اسم':
         case 'معنى-أسم':
@@ -331,7 +331,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 22 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/36/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'أسم-الوجبة':
             msg.delete();
@@ -339,7 +339,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 17 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/37/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'من-القائل':
             msg.delete();
@@ -347,7 +347,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 15 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/38/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اكمل-بمنشن':
         case 'أكمل-بمنشن':
@@ -356,7 +356,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 18 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/39/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'اسم-العاصمة':
         case 'اسم-العا':
@@ -366,7 +366,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 31 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/40/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'help':
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
