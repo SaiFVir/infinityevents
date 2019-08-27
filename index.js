@@ -238,7 +238,7 @@ bot.on('message', async msg =>{
             if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
             if(a[1] == 0 || a[1] > 31 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
             await mch.sendFile(`./files/25/${a[1]}.png`);
-            msg.channel.send(`**Sent By : ${msg.author.username}**, @everyone || @here`);
+            msg.channel.send(`@here`);
         break;
         case 'كاريكتير':
             msg.delete();
