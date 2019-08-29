@@ -381,7 +381,8 @@ bot.on('message', async msg =>{
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
             let e = new Discord.RichEmbed();
 	    e.setAuthor(`${msg.author.username} | Usege:[ex: -english 10]`, `${msg.author.avatarURL}`)
-            .setImage("https://s2.gulfupload.com/i/00095/x19ty08bzgx8.png")
+            .setImage("https://www.up-00.com/i/00137/k2jccd63hh3z.png")// https://s2.gulfupload.com/i/00095/x19ty08bzgx8.png
+
             .setFooter(`Developed by SAIF`)
             .setTimestamp();await mch.send(e);
         break;
