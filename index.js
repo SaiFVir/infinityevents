@@ -368,6 +368,15 @@ bot.on('message', async msg =>{
             await mch.sendFile(`./files/40/${a[1]}.png`);
             msg.channel.send(`@here`);
         break;
+        case 'احزر':
+ 	case 'أحزر':
+            msg.delete();
+            if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
+            if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
+            if(a[1] == 0 || a[1] > 61 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
+            await mch.sendFile(`./files/41/${a[1]}.png`);
+            msg.channel.send(`@here`);
+        break;
         case 'help':
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
             let e = new Discord.RichEmbed();
