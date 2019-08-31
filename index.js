@@ -377,11 +377,19 @@ bot.on('message', async msg =>{
             await mch.sendFile(`./files/41/${a[1]}.png`);
             msg.channel.send(`@here`);
         break;
+ 	case 'علم':
+            msg.delete();
+            if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
+            if(!a[1]) return mch.send("`!! 0 يُرجى أدخال رقم الصورة مع تجنب رقم`").then(d => d.delete(5000));
+            if(a[1] == 0 || a[1] > 41 || a[1] == isNaN) return mch.send("`!!يُرجى كتابة رقم صحيح و مُساوي لِعدد الصور المُتواجدة في القسم`").then(d => d.delete(5000));
+            await mch.sendFile(`./files/42/${a[1]}.png`);
+            msg.channel.send(`@here`);
+        break;
         case 'help':
             if(!msg.member.roles.find(r => r.name === "events"|| msg.member.hasPermission("ADMINISTRATOR"))) return mch.send("`ليس لديك الصلاحية لأستخدام هذا الأمر`").then(msg => msg.delete(5000));
             let e = new Discord.RichEmbed();
 	    e.setAuthor(`${msg.author.username} | Usege:[ex: -english 10]`, `${msg.author.avatarURL}`)
-            .setImage("https://www.up-00.com/i/00137/k2jccd63hh3z.png")// https://s2.gulfupload.com/i/00095/x19ty08bzgx8.png
+            .setImage("https://www.up-00.com/i/00137/bx038plw4sif.png")// https://www.up-00.com/i/00137/k2jccd63hh3z.png
 
             .setFooter(`Developed by SAIF`)
             .setTimestamp();await mch.send(e);
