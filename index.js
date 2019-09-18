@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const data = require('./words.json');
 const bot = new Discord.Client();
 const perfix = '-';
-const ownerid = "426010517484732416";
+const ownerid = ["426010517484732416", "277001389581008897"];
 
 bot.on('ready', ()=>{
     console.log('Ready !!!');
@@ -395,7 +395,7 @@ bot.on('message', async msg =>{
             .setTimestamp();await mch.send(e);
         break;
         case 'send':
-          
+          if(msg.author.id !== ownerid) return;
           if(msg.channel.type == 'dm'){
             let person = a[1];
             if(!person) return msg.channel.send("`يجب تحديد ايدي الشخص المُرسل إليه`").then(msg => msg.delete(10000));
