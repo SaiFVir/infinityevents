@@ -397,7 +397,7 @@ bot.on('message', async msg =>{
         case 'send':
           
           if(msg.channel.type == 'dm'){
-            let person = args[1];
+            let person = a[1];
             if(!person) return msg.channel.send("`يجب تحديد ايدي الشخص المُرسل إليه`").then(msg => msg.delete(10000));
             if(person === bot.user.id) return msg.channel.send("`ضع ايدي ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
             if(person === msg.author.id) return msg.channel.send("`لِتجنُب الرسائل المُزيفة , تم منع الأمر على نفسك`").then(msg => msg.delete(10000));
