@@ -394,6 +394,35 @@ bot.on('message', async msg =>{
             .setFooter(`Developed by SAIF`)
             .setTimestamp();await mch.send(e);
         break;
+        case 'send':
+          
+          if(msg.channel.type == 'dm'){
+            let person = args[1];
+            if(!person) return msg.channel.send("`يجب تحديد ايدي الشخص المُرسل إليه`").then(msg => msg.delete(10000));
+            if(person === bot.user.id) return msg.channel.send("`ضع ايدي ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
+            if(person === msg.author.id) return msg.channel.send("`لِتجنُب الرسائل المُزيفة , تم منع الأمر على نفسك`").then(msg => msg.delete(10000));
+            let dirmsg = msg.content.slice(24);
+            if(!dirmsg) return msg.channel.send("`يُرجى كتابة نص الرسالة`").then(msg => msg.delete(10000));
+            
+            let servv = bot.guilds.get("548611361966522369");
+            let srch = servv.members.find(f => f.id === person);
+            if(!srch) return msg.channel.send("`لا يوجد يوزر بِهذا الأيدي`").then(msg => msg.delete(10000));
+            let dr = new Discord.RichEmbed()
+            .setAuthor(`${servv.name} Sarahah`, `${servv.iconURL}`)
+            .setColor("RANDOM")
+            .setDescription(`-----------------------------------\n${dirmsg}\n-----------------------------------`)
+            .setTimestamp()
+            .setFooter(`Anonymous`, `${bot.user.displayAvatarURL}`);
+            await srch.send(dr);
+            let doone = new Discord.RichEmbed()
+            .setAuthor(`${srch.user.username} تم إرسال رسالتك بِنجاح إلى ✔`, `${srch.user.displayAvatarURL}`)
+            .setColor("RANDOM")
+            msg.channel.send(doone).then(msg => msg.delete(10000));
+          }else{
+            msg.delete();
+            msg.author.send(`\`\`\`Note: الأمر صالح في خاص البوت فقط\nUsage: $send <id> <content>\nمثال: $send ${msg.author.id} أنفينيتي خطير\`\`\``);
+          }
+      break;
    }
    
 }); // for bot.24
