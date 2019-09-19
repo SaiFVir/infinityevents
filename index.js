@@ -395,8 +395,9 @@ bot.on('message', async msg =>{
             .setTimestamp();await mch.send(e);
         break;
         case 'send':
-          if(msg.author.id !== ownerid) return;
+          
           if(msg.channel.type == 'dm'){
+	    if(msg.author.id !== ownerid) return;  
             let person = a[1];
             if(!person) return msg.channel.send("`يجب تحديد ايدي الشخص المُرسل إليه`").then(msg => msg.delete(10000));
             if(person === bot.user.id) return msg.channel.send("`ضع ايدي ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
