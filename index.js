@@ -394,39 +394,92 @@ bot.on('message', async msg =>{
             .setFooter(`Developed by SAIF`)
             .setTimestamp();await mch.send(e);
         break;
-        case 'send':
-          
-          if(msg.channel.type == 'dm'){
-	    if(msg.author.id !== ownerid) return;  
-            let person = a[1];
-            if(!person) return msg.channel.send("`يجب تحديد ايدي الشخص المُرسل إليه`").then(msg => msg.delete(10000));
-            if(person === bot.user.id) return msg.channel.send("`ضع ايدي ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
-            if(person === msg.author.id) return msg.channel.send("`لِتجنُب الرسائل المُزيفة , تم منع الأمر على نفسك`").then(msg => msg.delete(10000));
-            let dirmsg = msg.content.slice(24);
-            if(!dirmsg) return msg.channel.send("`يُرجى كتابة نص الرسالة`").then(msg => msg.delete(10000));
-            
-            let servv = bot.guilds.get("548611361966522369");
-            let srch = servv.members.find(f => f.id === person);
-            if(!srch) return msg.channel.send("`لا يوجد يوزر بِهذا الأيدي`").then(msg => msg.delete(10000));
-            let dr = new Discord.RichEmbed()
-            .setAuthor(`${servv.name} Sarahah`, `${servv.iconURL}`)
-            .setColor("RANDOM")
-            .setDescription(`-----------------------------------\n${dirmsg}\n-----------------------------------`)
-            .setTimestamp()
-            .setFooter(`Anonymous`, `${bot.user.displayAvatarURL}`);
-            await srch.send(dr);
-            let doone = new Discord.RichEmbed()
-            .setAuthor(`${srch.user.username} تم إرسال رسالتك بِنجاح إلى ✔`, `${srch.user.displayAvatarURL}`)
-            .setColor("RANDOM")
-            msg.channel.send(doone).then(msg => msg.delete(10000));
-          }else{
-            msg.delete();
-            msg.author.send(`\`\`\`Note: الأمر صالح في خاص البوت فقط\nUsage: $send <id> <content>\nمثال: $send ${msg.author.id} أنفينيتي خطير\`\`\``);
-          }
-      break;
    }
    
 }); // for bot.24
+
+bot.on('message',async msg => {
+  let ar = msg.content.split(" ");
+  let member = ar[0].slice();
+  ar.shift();
+
+  if(msg.channel.type == 'dm'){
+    if(msg.author.bot) return;
+    if(!ar) return msg.channel.send("`يُرجى كتابة نص الرسالة`").then(msg => msg.delete(10000));
+    if(msg.attachments.size > 0) return msg.channel.send("`لا يُمكن إرفاق صورة`").then(msg => msg.delete(10000));
+    let servv = bot.guilds.get("496636561903976449");
+    let srch = servv.members.find(f => f.user.tag === member);
+    if(!srch) return msg.channel.send("`'user#0000' لا يوجد يوزر بِهذا الأسم , تأكد من الأسم والتاق بِشكل صحيح`").then(msg => msg.delete(10000));
+    if(srch.user.bot) return msg.channel.send("`ضع أسم ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
+    if(srch.user.tag === msg.author.tag) return msg.channel.send("`لِتجنُب الرسائل المُزيفة , تم منع الأمر على نفسك`").then(msg => msg.delete(10000));
+    if(ar.toString().length < 30 || ar.toString().length > 420) return msg.channel.send("`يجب ان يكون مُحتوى الرسالة لا يقل عن 30 حرف , ولا يزيد عن 420 حرف`");
+    
+
+
+    function wrapText(context, text, x, y, maxWidth, lineHeight) {
+      let words = text.split(' ');
+      let line = '';
+
+      for(let n = 0; n < words.length; n++) {
+        let testLine = line + words[n] + ' ';
+        let metrics = context.measureText(testLine);
+        let testWidth = metrics.width;
+        if (testWidth > maxWidth && n > 0) {
+          context.fillText(line, x, y);
+          line = words[n] + ' ';
+          y += lineHeight;
+        }
+        else {
+          line = testLine;
+        }
+      }
+      context.fillText(line, x, y);
+    }
+
+    let imag = ['in1', 'in2', 'in3'];
+    
+    let canvas = Canvas.createCanvas(1000, 309);
+    let context = canvas.getContext('2d');
+
+    let rand = Math.floor(Math.random() * imag.length);
+
+    const background = await Canvas.loadImage(`./${imag[rand]}.png`);
+	  context.drawImage(background, 0, 0, canvas.width, canvas.height);
+
+    let maxWidth = 870;
+    let lineHeight = 42;
+    let x = 100;
+    let y = 80;
+    let text = ar.join(" ");
+
+
+    context.font = '20pt Arial';
+    context.fillStyle = '#333436';
+
+    wrapText(context, text, x, y, maxWidth, lineHeight);
+
+    const attachment = new Discord.Attachment(canvas.toBuffer(), 'Developed-by-SAIF.png');
+    await srch.send(attachment);
+
+
+    //*********/ embed message : 
+
+    // let dr = new Discord.RichEmbed()
+    // .setAuthor(`${servv.name} Sarahah`, `${servv.iconURL}`)
+    // .setColor("RANDOM")
+    // .setDescription(`-----------------------------------\n${ar}\n-----------------------------------`)
+    // .setTimestamp()
+    // .setFooter(`Anonymous`, `${bot.user.displayAvatarURL}`);
+    // await srch.send(dr);
+
+    //*********/ embed message :
+
+    let doone = new Discord.RichEmbed()
+    .setAuthor(`${srch.user.username} تم إرسال رسالتك بِنجاح إلى ✔`, `${srch.user.displayAvatarURL}`)
+    .setColor("RANDOM")
+    msg.channel.send(doone).then(msg => msg.delete(10000));
+  }
+});
 
 bot.on("message",async msg => {
 	const args = msg.content.split(" ").slice(1);
