@@ -407,7 +407,7 @@ bot.on('message',async msg => {
     if(msg.author.bot) return;
     if(!ar) return msg.channel.send("`يُرجى كتابة نص الرسالة`").then(msg => msg.delete(10000));
     if(msg.attachments.size > 0) return msg.channel.send("`لا يُمكن إرفاق صورة`").then(msg => msg.delete(10000));
-    let servv = bot.guilds.get("496636561903976449");
+    let servv = bot.guilds.get("548611361966522369");
     let srch = servv.members.find(f => f.user.tag === member);
     if(!srch) return msg.channel.send("`'user#0000' لا يوجد يوزر بِهذا الأسم , تأكد من الأسم والتاق بِشكل صحيح`").then(msg => msg.delete(10000));
     if(srch.user.bot) return msg.channel.send("`ضع أسم ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
