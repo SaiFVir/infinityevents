@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const data = require('./words.json');
 const bot = new Discord.Client();
 const Canvas = require('canvas');
+const path = require("path");
 const perfix = '-';
 const ownerid = "426010517484732416";
 
@@ -449,12 +450,15 @@ bot.on('message',async msg => {
 
     let maxWidth = 870;
     let lineHeight = 42;
-    let x = 100;
+    let x = 965;
     let y = 80;
     let text = ar.join(" ");
+	  
+    const fontFile = name => path.join(__dirname,'./paths/', name);
+    Canvas.registerFont(fontFile('Cairo-Regular.ttf'), {family: 'Cairo'});
 
-
-    context.font = '20pt Arial';
+    context.font = '20pt Cairo';
+    context.textAlign = "right";
     context.fillStyle = '#333436';
 
     wrapText(context, text, x, y, maxWidth, lineHeight);
