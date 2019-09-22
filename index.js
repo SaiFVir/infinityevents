@@ -413,7 +413,7 @@ bot.on('message',async msg => {
     let srch = servv.members.find(f => f.user.tag === member);
     if(!srch) return msg.channel.send("`'user#0000' لا يوجد يوزر بِهذا الأسم , تأكد من الأسم والتاق بِشكل صحيح`").then(msg => msg.delete(10000));
     if(srch.user.bot) return msg.channel.send("`ضع أسم ليوزر حقيقي بدلاً من بوت`").then(msg => msg.delete(10000));
-    if(srch.user.tag === msg.author.tag) return msg.channel.send("`لِتجنُب الرسائل المُزيفة , تم منع الأمر على نفسك`").then(msg => msg.delete(10000));
+    //if(srch.user.tag === msg.author.tag) return msg.channel.send("`لِتجنُب الرسائل المُزيفة , تم منع الأمر على نفسك`").then(msg => msg.delete(10000));
     if(ar.toString().length < 30 || ar.toString().length > 420) return msg.channel.send("`يجب ان يكون مُحتوى الرسالة لا يقل عن 30 حرف , ولا يزيد عن 420 حرف`");
     
 
