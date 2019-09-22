@@ -3,7 +3,7 @@ const data = require('./words.json');
 const bot = new Discord.Client();
 const Canvas = require('canvas');
 const perfix = '-';
-const ownerid = ["426010517484732416", "277001389581008897"];
+const ownerid = "426010517484732416";
 
 bot.on('ready', ()=>{
     console.log('Ready !!!');
