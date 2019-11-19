@@ -7,7 +7,9 @@ const perfix = '-';
 const ownerid = "426010517484732416";
 
 bot.on('ready', ()=>{
-    console.log('Ready !!!');
+    console.log(`----------${bot.user.username} is Online`);
+    console.log(`----------${bot.guilds.size}`);
+    console.log(`----------${bot.guilds}`).join('\n----------');
     bot.user.setActivity("Soon",{type:"Playing"});
 })
 
