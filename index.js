@@ -10,7 +10,7 @@ bot.on('ready', ()=>{
     console.log(`----------${bot.user.username} is Online`);
     console.log(`----------${bot.guilds.size}`);
     console.log(`----------${bot.guilds.array()}`);//.join('\n----------');
-    bot.user.setActivity("Soon",{type:"Playing"});
+    bot.user.setActivity("-help",{type: "STREAMING"});
 })
 
 try{
